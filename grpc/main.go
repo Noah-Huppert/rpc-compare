@@ -36,8 +36,8 @@ func main() {
 
 	res, err := client.Add(ctx, numbers)
 	if err != nil {
-		log.Fatalf("error calling Calc.Add method: %s", err.Error())
+		log.Fatalf("error calling Calculator.Add method: %s", err.Error())
 	}
 
-	log.Printf("Calc.Add result was: %d", res.Result)
+	log.Printf("Calculator.Add result was: %d", res.Result)
 }

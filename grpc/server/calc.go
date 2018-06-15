@@ -6,10 +6,10 @@ import "net"
 import "google.golang.org/grpc"
 import "fmt"
 
-// CalcServer implements the Calc service
+// CalcServer implements the Calculator service
 type CalcServer struct{}
 
-// Add implements Calc.Add
+// Add implements Calculator.Add
 func (c *CalcServer) Add(ctx context.Context, numbers *calc.Numbers) (
 	*calc.Result, error) {
 
